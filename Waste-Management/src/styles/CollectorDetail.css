@@ -1,0 +1,369 @@
+/* =========================================================
+   COLLECTOR DETAIL
+========================================================= */
+
+.collector-detail-page {
+  min-height: 100%;
+  padding: 28px 30px 35px;
+  box-sizing: border-box;
+  background: #f8f6ef;
+  color: #234447;
+}
+
+.collector-detail-loading,
+.collector-detail-error {
+  margin-top: 25px;
+  padding: 22px;
+  border: 1px solid #dfe6e2;
+  border-radius: 16px;
+  background: #fff;
+  color: #71888e;
+  font-size: 13px;
+}
+
+.collector-detail-error {
+  color: #b53c42;
+  background: #fff4f4;
+  border-color: #efc5c5;
+}
+
+.collector-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #6b858b;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.collector-detail-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.collector-detail-code {
+  display: block;
+  margin-bottom: 7px;
+  color: #258981;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.collector-detail-heading h1 {
+  margin: 0;
+  color: #29464a;
+  font-size: 34px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.collector-detail-heading p {
+  margin: 9px 0 0;
+  color: #748b91;
+  font-size: 13px;
+}
+
+.collector-detail-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 31px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.collector-detail-status.available {
+  border: 1px solid #a9e7d0;
+  background: #f0fcf6;
+  color: #208f6c;
+}
+
+.collector-detail-status.busy {
+  border: 1px solid #ffd66e;
+  background: #fffaf0;
+  color: #b87500;
+}
+
+.collector-detail-status.offline {
+  border: 1px solid #ffc5c5;
+  background: #fff3f3;
+  color: #d34046;
+}
+
+.collector-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(340px, .78fr) minmax(450px, 1.45fr);
+  gap: 20px;
+}
+
+.collector-profile-card,
+.collector-assignment-card {
+  border: 1px solid #dfe6e2;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(30, 62, 62, .035);
+}
+
+.collector-profile-card {
+  padding: 27px;
+}
+
+.collector-detail-avatar {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  background: #f4bf35;
+  color: #28484d;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.collector-profile-label {
+  color: #7a9296;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.collector-profile-card h2 {
+  margin: 8px 0 0;
+  color: #29484d;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.collector-profile-subtitle {
+  margin: 5px 0 0;
+  color: #83979b;
+  font-size: 11px;
+}
+
+.collector-detail-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.collector-detail-stats > div {
+  min-height: 79px;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #f5f2eb;
+}
+
+.collector-detail-stats span {
+  display: block;
+  color: #7d9195;
+  font-size: 10px;
+}
+
+.collector-detail-stats strong {
+  display: block;
+  margin-top: 8px;
+  color: #29484d;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.collector-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 23px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0ed;
+}
+
+.collector-contact-list div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #758c91;
+  font-size: 11px;
+}
+
+.collector-contact-list svg {
+  color: #5f8388;
+}
+
+.collector-assignment-card {
+  overflow: hidden;
+}
+
+.collector-assignment-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px;
+  border-bottom: 1px solid #e9ece9;
+}
+
+.collector-assignment-header h2 {
+  margin: 0;
+  color: #2b484c;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.collector-assignment-header p {
+  margin: 5px 0 0;
+  color: #819499;
+  font-size: 11px;
+}
+
+.collector-assignment-header > svg {
+  color: #5c7d83;
+}
+
+.collector-assignment-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 78px;
+  padding: 13px 21px;
+  border-bottom: 1px solid #edf0ed;
+}
+
+.collector-assignment-row:last-child {
+  border-bottom: 0;
+}
+
+.collector-assignment-icon {
+  width: 35px;
+  height: 35px;
+  flex: 0 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #f2f0e8;
+  color: #5e7b80;
+}
+
+.collector-assignment-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.collector-assignment-main strong {
+  display: block;
+  overflow: hidden;
+  color: #344f54;
+  font-size: 13px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collector-assignment-main span {
+  display: block;
+  margin-top: 4px;
+  color: #80959a;
+  font-size: 10px;
+}
+
+.collector-assignment-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.collector-assignment-status.pending {
+  background: #fff8e9;
+  color: #b77800;
+}
+
+.collector-assignment-status.assigned {
+  background: #f0f4f8;
+  color: #5f7287;
+}
+
+.collector-assignment-status.in-progress {
+  background: #edf4fb;
+  color: #55769a;
+}
+
+.collector-assignment-status.completed {
+  background: #ebf9f1;
+  color: #278866;
+}
+
+.collector-assignment-status.cancelled {
+  background: #fff1f1;
+  color: #b94a50;
+}
+
+.collector-no-assignments {
+  min-height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 25px;
+  color: #84979c;
+  text-align: center;
+  font-size: 11px;
+}
+
+.collector-no-assignments svg {
+  color: #2c9187;
+}
+
+.collector-no-assignments strong {
+  color: #38575d;
+  font-size: 14px;
+}
+
+@media (max-width: 1050px) {
+  .collector-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .collector-detail-page {
+    padding: 22px 17px 30px;
+  }
+
+  .collector-detail-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .collector-detail-heading h1 {
+    font-size: 29px;
+  }
+
+  .collector-assignment-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .collector-assignment-status {
+    margin-left: 47px;
+  }
+}

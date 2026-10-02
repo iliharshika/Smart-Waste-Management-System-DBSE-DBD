@@ -1,0 +1,450 @@
+/* =========================================================
+   SMART BIN DETAIL
+   Reference-style layout
+========================================================= */
+
+.smart-bin-detail-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 24px 30px 38px;
+  box-sizing: border-box;
+  background: #f8f6ef;
+  color: #203f43;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.smart-bin-detail-breadcrumb {
+  margin-bottom: 18px;
+}
+
+.smart-bin-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #71888d;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.smart-bin-back:hover {
+  color: #238c83;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.smart-bin-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.smart-bin-detail-code {
+  margin-bottom: 7px;
+  color: #278d85;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.smart-bin-detail-header h1 {
+  margin: 0;
+  color: #223f43;
+  font-size: 34px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.smart-bin-detail-header p {
+  margin: 9px 0 0;
+  color: #718a90;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.smart-bin-detail-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.detail-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 31px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.detail-status-pill.normal {
+  background: #e9f8f1;
+  color: #20846b;
+}
+
+.detail-status-pill.warning {
+  background: #fff0d1;
+  color: #b97200;
+}
+
+.detail-status-pill.critical {
+  background: #ffe2e2;
+  color: #d5363c;
+}
+
+
+/* =========================================================
+   ERROR / LOADING
+========================================================= */
+
+.smart-bin-detail-error {
+  margin-bottom: 16px;
+  padding: 11px 14px;
+  border: 1px solid #f1c4c4;
+  border-radius: 10px;
+  background: #fff2f2;
+  color: #b62e35;
+  font-size: 12px;
+}
+
+.smart-bin-detail-loading {
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #7b9196;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   TOP GRID
+========================================================= */
+
+.smart-bin-detail-top-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.78fr)
+    minmax(0, 1.22fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.smart-bin-fill-card,
+.smart-bin-history-card,
+.smart-bin-collection-card {
+  border: 1px solid #dddeda;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow:
+    0 4px 18px rgba(37, 55, 55, 0.035);
+}
+
+
+/* =========================================================
+   LIVE FILL
+========================================================= */
+
+.smart-bin-fill-card {
+  min-height: 375px;
+  padding: 25px 26px;
+  box-sizing: border-box;
+}
+
+.detail-card-title {
+  color: #6d878c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.smart-bin-fill-number {
+  margin-top: 12px;
+  color: #213f43;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.smart-bin-fill-number span {
+  margin-left: 4px;
+  color: #436167;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.smart-bin-large-progress {
+  width: 100%;
+  height: 9px;
+  margin-top: 27px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e8e9e5;
+}
+
+.smart-bin-large-progress > div {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.smart-bin-large-progress .normal {
+  background: #32a97d;
+}
+
+.smart-bin-large-progress .warning {
+  background: #f29a46;
+}
+
+.smart-bin-large-progress .critical {
+  background: #ef3d43;
+}
+
+.smart-bin-scale {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  color: #789197;
+  font-size: 11px;
+}
+
+.smart-bin-detail-stat-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.smart-bin-detail-stat-grid > div {
+  min-height: 64px;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #f5f2eb;
+}
+
+.smart-bin-detail-stat-grid span {
+  display: block;
+  color: #83959a;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.smart-bin-detail-stat-grid strong {
+  display: block;
+  margin-top: 7px;
+  color: #28484d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SENSOR HISTORY
+========================================================= */
+
+.smart-bin-history-card {
+  min-height: 375px;
+  overflow: hidden;
+}
+
+.detail-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 69px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e7ebe8;
+}
+
+.detail-card-header h2 {
+  margin: 0;
+  color: #263f43;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.detail-card-header p {
+  margin: 4px 0 0;
+  color: #81959a;
+  font-size: 10px;
+}
+
+.detail-card-header > span {
+  color: #83969a;
+  font-size: 9px;
+}
+
+.smart-bin-chart-wrap {
+  height: 305px;
+  padding: 13px 17px 10px 8px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COLLECTION HISTORY
+========================================================= */
+
+.smart-bin-collection-card {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.smart-bin-collection-card .detail-card-header {
+  min-height: 68px;
+}
+
+.smart-bin-collection-row,
+.smart-bin-collection-empty {
+  display: grid;
+  grid-template-columns:
+    36px
+    1fr
+    auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 83px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.smart-bin-collection-empty {
+  grid-template-columns:
+    36px
+    1fr;
+}
+
+.collection-history-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #edf7f4;
+  color: #2b8d83;
+}
+
+.collection-history-main strong,
+.collection-history-main span,
+.smart-bin-collection-empty strong,
+.smart-bin-collection-empty span {
+  display: block;
+}
+
+.collection-history-main strong,
+.smart-bin-collection-empty strong {
+  color: #304f54;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.collection-history-main span,
+.smart-bin-collection-empty span {
+  margin-top: 4px;
+  color: #7c9196;
+  font-size: 10px;
+}
+
+.detail-collection-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 29px;
+  padding: 0 11px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.detail-collection-status.pending {
+  background: #fff1d7;
+  color: #bd7800;
+}
+
+.detail-collection-status.assigned,
+.detail-collection-status.in-progress {
+  background: #edf3f9;
+  color: #59758c;
+}
+
+.detail-collection-status.completed {
+  background: #e9f8ef;
+  color: #218667;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+  .smart-bin-detail-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .smart-bin-history-card {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 700px) {
+  .smart-bin-detail-page {
+    padding: 18px 14px 28px;
+  }
+
+  .smart-bin-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .smart-bin-detail-header h1 {
+    font-size: 29px;
+  }
+
+  .smart-bin-detail-header-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .smart-bin-detail-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .smart-bin-scale {
+    flex-direction: column;
+  }
+
+  .smart-bin-collection-row {
+    grid-template-columns: 36px 1fr;
+  }
+
+  .detail-collection-status {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
